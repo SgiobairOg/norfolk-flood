@@ -47,19 +47,19 @@ app.controller('userIncomeController', ['$scope','$http', 'dataService', functio
         level: '0.00',
         levelName: 'NONE',
         cost: $scope.toCost( incomeLevel, incomeRange[0]['0m'] ),
-        message: 'If the sea level stays the same, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['0m'] + " per year.")
+        message: 'If the sea level stays the same, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['0m']) + ' per year.'
       },
       {
         level: '0.50',
         levelName: 'LOW',
         cost: $scope.toCost( incomeLevel, incomeRange[0]['5m'] ),
-        message: 'In the best-case sea level rise scenario, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['5m'] + " per year." )
+        message: 'In the best-case sea level rise scenario, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['5m']) + ' per year.'
       },
       {
         level: '0.75',
         levelName: 'HIGH',
         cost: $scope.toCost( incomeLevel, incomeRange[0]['75m'] ),
-        message: 'In the worst-case sea level rise scenario, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['75m'] + " per year." )
+        message: 'In the worst-case sea level rise scenario, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['75m']) + ' per year.' 
       }
     ];
   };
