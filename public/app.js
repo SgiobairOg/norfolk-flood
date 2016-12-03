@@ -47,7 +47,7 @@ app.controller('userIncomeController', ['$scope','$http', 'dataService', functio
         level: '0.00',
         levelName: 'NONE',
         cost: $scope.toCost( incomeLevel, incomeRange[0]['0m'] ),
-        message: 'If the sea level stays the same, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['0m'] )
+        message: 'If the sea level stays the same, you are predicted to lose $' + $scope.toCost( incomeLevel, incomeRange[0]['0m'] + " per year.")
       },
       {
         level: '0.50',
